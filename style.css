@@ -31,7 +31,7 @@ body {
     height: 80px;
     margin:  8px;
     float: inline-end;
-    
+    padding: 0px0;
 }
 
 .head .class a{
@@ -41,6 +41,7 @@ body {
     position: relative;
     padding: 10px;
     float: inline-start;
+    
 }
 
 .head .class a:hover{
@@ -67,11 +68,13 @@ body {
     padding: 10px;
     position: relative;
     margin: 0 0 0 0;
+    text-align: left;
 }
 
 .navbar a{
+    
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     text-decoration: none;
     padding: 10px;
@@ -83,26 +86,32 @@ body {
 
 .container {
     display: flex;
-    margin: auto;
+    margin: 5px auto;
     padding: 5px;
+    
 }
 
 .sidebar {
     flex: 1;
     padding: 20px;
     background: #ffff;
-    border:1px solid;
+    
     width: 1000px;
     height: 800px;
     margin: 2px;
 }
 
-.container .sidebar{
-    border: 1px solid;
+.container .sidebar a{
+    font-size: 25px;
+}
+
+.container .sidebar h3{
+    font-size: 10px;
 }
 
 .container .sidebar img{
-    max-width: 30%;
+    max-width: 300px;
+    position: relative;
     height: auto;
     margin: 5px;
     display: block;
@@ -120,15 +129,14 @@ a{
     outline: 0;
     font-size: 20px;
     position: relative;
-    text-align: center;
-    align-items:center ;
+   
 }
 
 .content {
     flex: 1;
     padding: 20px;
     background: #ffff;
-    border:1px solid;
+    
     width: 1000px;
     height: 800px;
     margin: 2px;
@@ -138,7 +146,7 @@ a{
     width: 800px;
     height: auto;
     padding: 10px;
-
+    
 }
 
 .content img:hover{
@@ -189,5 +197,6 @@ footer {
 @media(max-width: 450px){
     html{
     font-size: 55%;
+    
     }    
 }
